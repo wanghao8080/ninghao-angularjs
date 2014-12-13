@@ -1,0 +1,14 @@
+{
+  "name": "ninghao-angularjs",
+  "version": "0.0.1",
+  "authors": [
+    "wanghao <wanghao@ninghao.net>"
+  ],
+  "description": "AngularJS course by ninghao.net",
+  "license": "MIT",
+  "homepage": "http://ninghao.net",
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "angular": "~1.3.6"
+  }
+}
