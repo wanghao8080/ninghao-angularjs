@@ -1,5 +1,14 @@
 var gulp = require('gulp');
 var connect = require('gulp-connect');
+var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
+
+gulp.task('scripts', function () {
+  return gulp.src('app/js/app.js')
+  .pipe(uglify())
+  .pipe(rename('app.min.js'))
+  .pipe(gulp.dest('app/js/'));
+});
 
 gulp.task('server', function () {
   connect.server({root: 'app', livereload: true});
